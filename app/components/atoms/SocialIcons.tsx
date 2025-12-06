@@ -2,6 +2,8 @@ import { ProfileData as data } from '@/config/content';
 import { IconContext } from 'react-icons';
 import { FiMail, FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 import { FaXTwitter } from "react-icons/fa6";
+import { FaHashnode } from "react-icons/fa6";
+
 
 export const SocialIcons = () => {
 
@@ -9,7 +11,7 @@ export const SocialIcons = () => {
     { key: "mail",      url: data.socials.mail,      icon: <FiMail /> },
     { key: "github",    url: data.socials.github,    icon: <FiGithub /> },
     { key: "linkedin",  url: data.socials.linkedin,  icon: <FiLinkedin /> },
-    { key: "instagram", url: data.socials.instagram, icon: <FiInstagram /> },
+    { key: "hashnode", url: data.socials.hashnode, icon: <FaHashnode /> },
     { key: "twitter",   url: data.socials.twitter,   icon: <FaXTwitter /> },
   ];
 

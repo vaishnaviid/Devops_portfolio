@@ -157,6 +157,7 @@ When I’m not orchestrating containers or fine-tuning pipelines, I love experim
     ],
     stats: { projects: 12, yearsExp: 1 },
     socials: { 
+      hashnode: 'https://zerotoroot.hashnode.dev/',
       mail: "vaishnavidhawalekar@gmail.com",
       github: 'https://github.com/vaishnaviid',
       linkedin: 'http://linkedin.com/in/vaishnavidhawalekar' },
