@@ -73,24 +73,24 @@ When I’m not orchestrating containers or fine-tuning pipelines, I love experim
     projects: [
       {
         id: "p1",
-        title: "AWS 3 tier Architecture| Modern Redesign",
+        title: "AWS 3 tier Deployment",
         description:
-          "A sleek and modern redesign of Nike’s official web experience built with React and Tailwind CSS.",
+          "Designed and deployed a scalable AWS 3-Tier Architecture with secure VPC networking, private App/DB tiers, and a public Web tier, integrating ALBs, Auto Scaling, RDS, CloudWatch, and SNS to deliver high availability, automated scaling, and robust operational visibility",
         link: "https://github.com/vaishnaviid/AWS_3tier_architecture_fianl-_project"
       },
       {
         id: "p2",
-        title: "Portfolio | Vishal Ravanank",
+        title: "Python Application Deployment Using Jenkins ",
         description:
-          "A dynamic portfolio showcasing projects, skills, and contributions using the latest web technologies.",
-        link: "#"
+          "Automated end-to-end Python application deployment using a Jenkins CI/CD pipeline with Git integration, secure SSH-based delivery, virtual environment provisioning, and remote server execution to enable streamlined, repeatable, and scalable deployments.",
+        link: "https://github.com/vaishnaviid/python-app-CICD"
       },
       {
         id: "p3",
-        title: "News Hub | Real-Time News Platform",
+        title: "ansible-deployment-scripts",
         description:
-          "A real-time news platform delivering the latest headlines across various categories using the News API.",
-        link: "#"
+          "modular Ansible playbooks and mini-projects for automating server configuration, deployments, and infrastructure provisioning using Infrastructure-as-Code practices..",
+        link: "https://github.com/vaishnaviid/ansible-deployment-scripts"
       },
       {
         id: "p4",
