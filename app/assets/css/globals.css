@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* Extending base styling */
+@layer base {
+  .container{ @apply mx-auto px-6 border-x border-dashed; max-width: none; border-color: var(--border); width: min(1750px, 91.4%); }
+
+  h1, h2, h3, h4, h5, h6 {@apply mb-4 mt-6;}
+  h1 { @apply text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1] mt-0; }
+  h2 { color: var(--h2); @apply text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1]; }
+  h3 { @apply text-2xl font-semibold; }
+  p { @apply mb-0 text-left text-base font-medium sm:text-sm; font-size: 18px; font-weight: 400;}
+  p+p { @apply mt-6; }
+  /* a { color: var(--linkColor); @apply underline hover:opacity-80; } */
+  code { @apply bg-gray-800 text-sm px-1 py-0.5 rounded; }
+  pre { @apply bg-gray-900 p-4 rounded-md overflow-x-auto; }
+  blockquote { @apply border-l-4 pl-4 italic text-gray-400; border-color: var(--border); }
+  ul:not(.reset), ol:not(.reset) { @apply mb-4 pl-6; }
+  .logosec svg{@apply inline-block;}
+  .reset{ @apply decoration-0 m-0 p-0;}
+}
+
+:root {
+  --bg: #021830; /* DarkBlue */
+  --bg: #101112;
+  --text: #f0f0f0;
+  --h2: #9f9fa9;
+  --border: oklch(100% 0 0 / .1);
+  --primar-color: #914bf1;
+}
+
+
+/* Light mode overrides */
+:root.light {
+  --bg: #f0f0f0;
+  --text: #000000;
+  --h2: #9f9fa9;
+  --border: oklch(92% .004 286.32);
+}
+
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+html {
+  font-family: 'Geist', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* Apply theme colors */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+
+/* Layout helpers */
+/* .app-shell { @apply min-h-screen flex flex-col; } */
+.content-area { @apply flex-1 p-10; }
+.sidebar { @apply w-56 pr-6 h-[calc(100vh-8rem)] overflow-auto border-r border-dashed; border-color: var(--border); }
+.header { @apply flex items-center justify-between border-b; border-color: var(--border) }
+.footer { @apply py-4 text-center text-sm opacity-70 border-t; border-color: var(--border); }
+
+.resumelink{ @apply flex items-center gap-2 px-4 py-2 text-sm border border-gray-700 rounded-md hover:bg-gray-800 transition; background-color: var(--primar-color); color: #fff; }
+
+/* Small tweaks for sidebar links */
+.sidebar a { @apply py-3 px-4 rounded-md text-sm hover:bg-gray-800; }
+.sidebar a.active { @apply bg-gray-800 font-semibold; }
+
+/* Clock styles */
+.clock { @apply px-3 py-1 rounded-full text-sm font-normal border; border-color: var(--border); background-color: rgba(255, 255, 255, 0.05);}
+
+/* add near the bottom of globals.css */
+@keyframes cinematic-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.995); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-cinematic-in {
+  animation: cinematic-in .5s cubic-bezier(.2,.9,.2,1) both;
+}
+
+/* floating label micro tweaks */
+.input-label {
+  transition: transform .18s ease, opacity .18s ease, font-size .18s ease;
+  transform-origin: left top;
+}
+
+.react-activity-calendar{@apply max-w-full w-full;}
+.react-activity-calendar svg{@apply max-w-full w-full;}
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label {
+  @apply text-sm;
+  transform: translateY(-1.5rem) scale(0.85);
+  opacity: 0.75;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar { @apply hidden; }
+  .content-area { @apply pl-4 pt-24; }
+}
+@media (max-width: 480px) {
+  .header { @apply px-4; }
+}
