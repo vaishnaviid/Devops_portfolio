@@ -85,7 +85,7 @@ When I’m not orchestrating containers or fine-tuning pipelines, I love experim
           "Automated end-to-end Python application deployment using a Jenkins CI/CD pipeline with Git integration, secure SSH-based delivery, virtual environment provisioning, and remote server execution to enable streamlined, repeatable, and scalable deployments.",
         link: "https://github.com/vaishnaviid/python-app-CICD"
       },
-      {
+      /*{
         id: "p3",
         title: "ansible-deployment-scripts",
         description:
@@ -119,7 +119,7 @@ When I’m not orchestrating containers or fine-tuning pipelines, I love experim
         description:
           "A growing library of open-source, reusable UI components built with React, Next.js, and TypeScript.",
         link: "#"
-      },
+      }, */
     ],
     experienceIntro: `Through my hands-on experience in the field, I learned the real-world workings of cloud and DevOps tools by building projects that clarified many practical doubts. Collaborating with teammates, troubleshooting issues, and deploying scalable solutions helped me develop problem-solving skills, a strong understanding of workflows, and the confidence to tackle complex challenges in Cloud and DevOps engineering.`,
     experiences: [

@@ -12,7 +12,7 @@ export const SocialIcons = () => {
     { key: "github",    url: data.socials.github,    icon: <FiGithub /> },
     { key: "linkedin",  url: data.socials.linkedin,  icon: <FiLinkedin /> },
     { key: "hashnode", url: data.socials.hashnode, icon: <FaHashnode /> },
-    { key: "twitter",   url: data.socials.twitter,   icon: <FaXTwitter /> },
+
   ];
 
   return (

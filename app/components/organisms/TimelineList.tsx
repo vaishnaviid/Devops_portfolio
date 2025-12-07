@@ -6,7 +6,7 @@ export type TimelineItem = {
   title: string;
   org: string;
   date: string;
-  desc: string;
+  desc?: string;
   badge?: string;
 };
 
