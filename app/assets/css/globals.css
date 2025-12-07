@@ -22,7 +22,6 @@
 :root {
   --bg: #021830; /* DarkBlue */
   --bg: #101112;
-  --bg: radial-gradient(circle at center, #2a173f, #0f0f1b, #09090f)
   --text: #f0f0f0;
   --h2: #9f9fa9;
   --border: oklch(100% 0 0 / .1);
